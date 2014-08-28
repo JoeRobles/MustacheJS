@@ -1,0 +1,23 @@
+{
+  "name": "MustacheJS",
+  "version": "1.0.0",
+  "homepage": "https://github.com/JoeRobles/MJSBBS",
+  "authors": [
+    "Joe Robles <joe.robles.pdj@gmail.com>"
+  ],
+  "description": "MustacheJS Brown Bag Seminar - Belatrix",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "mustache": "latest"
+  }
+}

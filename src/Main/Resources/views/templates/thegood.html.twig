@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .gunner {
+            background-image: url("../images/the-good.jpg");
+            min-height: 222px;
+        }
+    </style>
+{% endblock %}
+
+{% block container %}
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form action="assets.php" class="form-horizontal" enctype="multipart/form-data" id="attend_form" method="post" role="form">
+                            <div class="form-group">
+                                <label for="server_versions" class="col-sm-4 control-label">mBanking Server Version</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" id="server_versions" name="server_versions">
+                                        <option>Please select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="types" class="col-sm-4 control-label">Type</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" id="types" name="types"></select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" id="urls"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">&nbsp;</div>
+                </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+        <script src="js/jquery.mustache.js"></script>
+        <script src="js/the-good.js"></script>
+{% endblock %}

@@ -1,0 +1,48 @@
+server_versions:
+    3.0.1:
+        s:
+            - ['iPhone', 'CS_iOS_Phone_3.0.1_Update8_Production/buildWithParameters?']
+            - ['iPad', 'CS_iOS_Tablet_3.0.1_Update8_Production/buildWithParameters?']
+            - ['Android', 'CS_Android_Phone_3.0.1_Update6_Production/buildWithParameters?']
+        a:
+            - ['iPhone', 'CS_iOS_Phone_3.0.1_Update8_Test/buildWithParameters?']
+            - ['iPad', 'CS_iOS_Tablet_3.0.1_Update8_Test/buildWithParameters?']
+            - ['Android', 'CS_Android_Phone_3.0.1_Update6_Test/buildWithParameters?']
+
+    3.1.0:
+        su:
+            - ['iPhone', 'CS_iOS_Phone_3.1_Production/buildWithParameters?']
+            - ['iPad', 'CS_iOS_Tablet_3.1_Production/buildWithParameters?']
+            - ['Android', 'CS_Android_Phone_3.1_Production/buildWithParameters?']
+        ad:
+            - ['iPhone', 'CS_iOS_Phone_3.1_Test/buildWithParameters?']
+            - ['iPad', 'CS_iOS_Tablet_3.1_Test/buildWithParameters?']
+            - ['Android', 'CS_Android_Phone_3.1_Test/buildWithParameters?']
+
+    3.2.5:
+        sub:
+            - ['iPhone', 'CS_iOS_Phone_3.2_Production/buildWithParameters?']
+            - ['iPad', 'CS_iOS_Tablet_3.2_Production/buildWithParameters?']
+            - ['iPhone', 'CS_Android_Phone_3.2_Production/buildWithParameters?']
+            - ['Android Tablet', 'CS_Android_Tablet_3.2_Production/buildWithParameters?']
+            - ['Android Amazon', 'CS_Android_Tablet_Amazon_3.2_Production/buildWithParameters?']
+        adh:
+            - ['iPhone', 'CS_iOS_Phone_3.2_Test/buildWithParameters?']
+            - ['iPad', 'CS_iOS_Tablet_3.2_Test/buildWithParameters?']
+            - ['iPhone', 'CS_Android_Phone_3.2_Test/buildWithParameters?']
+            - ['Android Tablet', 'CS_Android_Tablet_3.2_Test/buildWithParameters?']
+            - ['Android Amazon', 'CS_Android_Tablet_Amazon_3.2_Test/buildWithParameters?']
+            
+    3.3.0:
+        submission:
+            - ['iPhone', 'CS_3.3_Smartphone_IOS_Production/buildWithParameters?']
+            - ['iPad', 'CS_3.3_Tablet_IOS_Production/buildWithParameters?']
+            - ['iPhone', 'CS_3.3_Smartphone_Android_Production/buildWithParameters?']
+            - ['Android Tablet', 'CS_3.3_Tablet_Android_Production/buildWithParameters?']
+            - ['Android Amazon', 'CS_3.3_Tablet_Android_Amazon_Production/buildWithParameters?']
+        adhoc:
+            - ['iPhone', 'CS_3.3_Smartphone_IOS_Test/buildWithParameters?']
+            - ['iPad', 'CS_3.3_Tablet_IOS_Test/buildWithParameters?']
+            - ['iPhone', 'CS_3.3_Smartphone_Android_Test/buildWithParameters?']
+            - ['Android Tablet', 'CS_3.3_Tablet_Android_Test/buildWithParameters?']
+            - ['Android Amazon', 'CS_3.3_Tablet_Android_Amazon_Test/buildWithParameters?']

@@ -1,0 +1,23 @@
+{
+    "name": "JoeRobles/MustacheJS",
+    "description": "MustacheJS Brown Bag Seminar - Belatrix",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joe Robles",
+            "email": "joe.robles.pdj@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "silex/silex": "~1.2",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "symfony/twig-bridge": "~2.3",
+        "symfony/yaml": "~2.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}

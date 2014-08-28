@@ -1,0 +1,22 @@
+span#logo {
+    color: #000;
+    height: 180px;
+    width: 200px;
+    transform: rotate(-90deg);
+    display: block;
+    font-size: 250px;
+    font-family: Georgia;
+    margin: 0 auto;
+    line-height: 200px;
+    margin-bottom: -30px;
+    position: relative;
+    left: -26px;
+}
+.gunner {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

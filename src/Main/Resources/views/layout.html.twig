@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets -%}
+        {{ parent() }}
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content -%}
+        <div id="MustacheJSModal" class="modal fade"></div>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path("index") }}">Mustache JS</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Gunmen<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li{% if app.request.attributes.get('_route') ==  "the_ugly" %} class="active"{% endif %}><a href="{{ path("the_ugly") }}">The Ugly</a></li>
+                            <li{% if app.request.attributes.get('_route') ==  "the_bad" %} class="active"{% endif %}><a href="{{ path("the_bad") }}">The Bad</a></li>
+                            <li{% if app.request.attributes.get('_route') ==  "the_good" %} class="active"{% endif %}><a href="{{ path("the_good") }}">The Good</a></li>
+                        </ul>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div id="flash_message" class="alert hidden">
+                <strong id="flash_title"></strong>
+            </div>
+            <div class="container">
+            {% block container %}{% endblock %}
+            </div>
+        </div>
+        <div class="gunner">&nbsp;</div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+        <script src="js/scripts.js"></script>
+{% endblock %}
