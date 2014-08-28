@@ -106,7 +106,6 @@ $app->get('/api/urls/{server_version_id}/{type_id}', function($server_version_id
 
 
 
-
 // THE BAD CONTROLLERS
 
 // GET /api/versions/list
