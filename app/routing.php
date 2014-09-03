@@ -4,22 +4,22 @@ use Symfony\Component\HttpFoundation\Response;
 // GET / Home
 $app->get('/', function() use($app) {
     $response = $app['twig']->render('templates/index.html.twig');
-    return new Response($response, 200);
+    return new Response($response, 200, array('Cache-Control' => 's-maxage=3600, public'));
 })->bind("index");
 // GET /the-ugly
 $app->get('/the-ugly', function() use($app) {
     $response = $app['twig']->render('templates/theugly.html.twig');
-    return new Response($response, 200);
+    return new Response($response, 200, array('Cache-Control' => 's-maxage=3600, public'));
 })->bind('the_ugly');
 // GET /the-bad
 $app->get('/the-bad', function() use($app) {
     $response = $app['twig']->render('templates/thebad.html.twig');
-    return new Response($response, 200);
+    return new Response($response, 200, array('Cache-Control' => 's-maxage=3600, public'));
 })->bind('the_bad');
 // GET /the-good
 $app->get('/the-good', function() use($app) {
     $response = $app['twig']->render('templates/thegood.html.twig');
-    return new Response($response, 200);
+    return new Response($response, 200, array('Cache-Control' => 's-maxage=3600, public'));
 })->bind('the_good');
 
 

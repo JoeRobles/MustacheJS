@@ -6,7 +6,7 @@ use Silex\Provider\HttpCacheServiceProvider as Cache;
 use Symfony\Component\Yaml\Parser;
 use Symfony\Component\HttpFoundation\Request;
 
-$app['debug'] = true;
+$app['debug'] = false;
 $app['locale'] = 'es';
 
 $yaml = new Parser();
